@@ -1903,7 +1903,7 @@
 
 .team-layout {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-columns: 0.6fr 1.4fr;
   gap: 4em;
   align-items: start;
 }
