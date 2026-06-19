@@ -333,15 +333,28 @@ export class AnimationController {
       });
     return (
       t.forEach((t) => {
-        r.to(
-          t,
-          {
-            backgroundColor: "transparent",
-            duration: 1.2,
-            ease: "power4.inOut",
-          },
-          "<+0.2",
-        );
+        const overlay = t.querySelector('.shift-image-overlay');
+        if (overlay) {
+          r.to(
+            overlay,
+            {
+              opacity: 0,
+              duration: 1.2,
+              ease: "power4.inOut",
+            },
+            "<+0.2",
+          );
+        } else {
+          r.to(
+            t,
+            {
+              backgroundColor: "transparent",
+              duration: 1.2,
+              ease: "power4.inOut",
+            },
+            "<+0.2",
+          );
+        }
       }),
       r
     );
