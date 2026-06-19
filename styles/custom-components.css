@@ -590,6 +590,15 @@
   inset: 5% 50%;
   rotate: -16deg;
 }
+.delirious-text_image.dti-7 {
+  inset: auto auto 10% 5%;
+  transform: rotate(10deg);
+}
+.delirious-text_image.dti-8 {
+  top: 40%;
+  left: 20%;
+  transform: rotate(-12deg);
+}
 .delirious-section {
   justify-content: center;
   align-items: flex-end;
