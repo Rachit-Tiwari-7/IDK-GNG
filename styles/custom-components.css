@@ -2092,6 +2092,11 @@
     padding-top: 6em;
     padding-bottom: 7em;
   }
+  .team-display-title {
+    font-size: 15vw;
+    line-height: 95%;
+    word-break: break-word;
+  }
   .team-members-grid {
     grid-template-columns: 1fr;
     gap: 3.5em;
