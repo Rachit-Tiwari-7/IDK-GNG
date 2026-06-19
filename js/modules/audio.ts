@@ -1,9 +1,18 @@
-import audioUrl from '../../assets/audio/calm.mp3';
+import audioUrl from '../../assets/audio/sad.mp3';
 
 export const audioController = {
   init() {
     const audio = new Audio(audioUrl);
-    audio.loop = true;
+    const START_TIME = 92; // 1 minute 32 seconds
+    const END_TIME = 150;  // 2 minutes 30 seconds
+    
+    audio.currentTime = START_TIME;
+    
+    audio.addEventListener('timeupdate', () => {
+      if (audio.currentTime >= END_TIME) {
+        audio.currentTime = START_TIME;
+      }
+    });
 
     const toggleBtn = document.getElementById('audio-toggle');
 
