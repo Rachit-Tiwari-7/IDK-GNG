@@ -797,9 +797,11 @@
 .peace-image_wrapper {
   padding: var(--sitepadding--pc);
   background-color: var(--lightblue);
-  border-radius: 8px;
+  border-radius: 0px !important;
   width: 100%;
   height: auto;
+  border: 5px solid #ffd700 !important;
+  box-shadow: none !important;
 }
 .peace-image {
   width: 100%;
